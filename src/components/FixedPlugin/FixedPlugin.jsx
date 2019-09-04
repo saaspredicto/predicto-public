@@ -8,7 +8,7 @@ class FixedPlugin extends Component {
     super(props);
     this.state = {
       classes: "dropdown",
-      darkMode: true
+      darkMode: false
     };
   }
   handleClick = () => {

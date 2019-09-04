@@ -19,9 +19,9 @@ class Portal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeColor: "grey",
+      activeColor: "orange",
       sidebarMini: false,
-      opacity: 0,
+      opacity: 1,
       sidebarOpened: false
     };
   }
