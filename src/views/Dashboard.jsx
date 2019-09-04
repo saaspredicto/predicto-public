@@ -78,7 +78,7 @@ class Dashboard extends React.Component {
                 <CardHeader>
                   <Row>
                     <Col className="text-left" sm="6">
-                      <h5 className="card-category">History currencys of</h5>
+                      <h5 className="card-category">Trend of</h5>
                       <CardTitle tag="h2">Bitcoin</CardTitle>
                     </Col>
                     <Col sm="6">

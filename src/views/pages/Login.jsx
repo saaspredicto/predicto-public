@@ -149,7 +149,7 @@ class Login extends React.Component {
                       onClick={e => this.login(e)}
                       size="lg"
                     >
-                      Get Started
+                      Login
                     </Button>
                     <div className="pull-left">
                       <h6>
