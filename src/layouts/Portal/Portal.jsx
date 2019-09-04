@@ -4,7 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import PerfectScrollbar from "perfect-scrollbar";
 
 // core components
-import AdminNavbar from "../../components/Navbars/AdminNavbar.jsx";
+import PortalNavbar from "../../components/Navbars/PortalNavbar.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import Sidebar from "../../components/Sidebar/Sidebar.jsx";
 import FixedPlugin from "../../components/FixedPlugin/FixedPlugin.jsx";
@@ -15,11 +15,11 @@ import logo from "../../assets/img/react-logo.png";
 
 var ps;
 
-class Admin extends React.Component {
+class Portal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeColor: "blue",
+      activeColor: "grey",
       sidebarMini: false,
       opacity: 0,
       sidebarOpened: false
@@ -78,7 +78,7 @@ class Admin extends React.Component {
       if (prop.collapse) {
         return this.getRoutes(prop.views);
       }
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/portal") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -168,7 +168,7 @@ class Admin extends React.Component {
           ref="mainPanel"
           data={this.state.activeColor}
         >
-          <AdminNavbar
+          <PortalNavbar
             {...this.props}
             handleMiniClick={this.handleMiniClick}
             brandText={this.getActiveRoute(routes)}
@@ -193,4 +193,4 @@ class Admin extends React.Component {
   }
 }
 
-export default Admin;
+export default Portal;

@@ -1,6 +1,6 @@
 {
-  "name": "predicto-dashboard-react",
-  "version": "1.0.1",
+  "name": "predicto",
+  "version": "1.0.2",
   "private": true,
   "dependencies": {
     "@types/react": "16.4.16",

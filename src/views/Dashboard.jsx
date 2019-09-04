@@ -47,7 +47,7 @@ class Dashboard extends React.Component {
   };
 
   routeChange() {
-    let path = `/admin/coins`;
+    let path = `/portal/coins`;
     this.props.history.push(path);
   }
 

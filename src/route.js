@@ -5,7 +5,7 @@ import ReactPixel from "react-facebook-pixel";
 import { connect } from "react-redux";
 
 import AuthLayout from "./layouts/Auth/Auth.jsx";
-import AdminLayout from "./layouts/Admin/Admin.jsx";
+import PortalLayout from "./layouts/Portal/Portal.jsx";
 
 import fire from "./fire.js";
 
@@ -67,7 +67,7 @@ class Rootrouter extends React.Component {
                 render={props =>
                     !auth.isEmpty ? (
                         <Redirect
-                        to="/admin/dashboard"
+                        to="/portal/dashboard"
                         />
                     ) : (
                         <Component {...props} />
@@ -89,8 +89,8 @@ class Rootrouter extends React.Component {
             <Router history={hist}>
                 <Switch>
                     <IsAuth path="/auth" component={AuthLayout} />} />
-                    <PrivateRoute path="/admin" component={AdminLayout} />} />
-                    <Redirect from="/" to="/admin/dashboard" />
+                    <PrivateRoute path="/portal" component={PortalLayout} />} />
+                    <Redirect from="/" to="/portal/dashboard" />
                     <Route path='*' component={NoMatch} />
                 </Switch>
             </Router>

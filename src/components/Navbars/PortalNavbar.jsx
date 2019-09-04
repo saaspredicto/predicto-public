@@ -25,7 +25,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { signOut } from "../../store/actions/authActions";
 
-class AdminNavbar extends React.Component {
+class PortalNavbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -154,7 +154,7 @@ class AdminNavbar extends React.Component {
                     <p className="d-lg-none">Log out</p>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-navbar" right tag="ul">
-                      <NavLink tag={Link} to="/admin/settings">
+                      <NavLink tag={Link} to="/portal/settings">
                         <DropdownItem className="nav-item">Settings</DropdownItem>
                       </NavLink>
                     <DropdownItem divider tag="li" />
@@ -197,4 +197,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(null, mapDispatchToProps)(AdminNavbar);
+export default connect(null, mapDispatchToProps)(PortalNavbar);

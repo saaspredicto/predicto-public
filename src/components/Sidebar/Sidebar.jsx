@@ -33,7 +33,7 @@ class Sidebar extends React.Component {
   };
   // this verifies if any of the collapses should be default opened on a rerender of this component
   // for example, on the refresh of the page,
-  // while on the src/views/forms/RegularForms.jsx - route /admin/regular-forms
+  // while on the src/views/forms/RegularForms.jsx - route /portal/regular-forms
   getCollapseInitialState(routes) {
     for (let i = 0; i < routes.length; i++) {
       if (routes[i].collapse && this.getCollapseInitialState(routes[i].views)) {

@@ -12,35 +12,35 @@ const routes = [
     name: "Dashboard",
     icon: "tim-icons icon-chart-pie-36",
     component: Dashboard,
-    layout: "/admin"
+    layout: "/portal"
   },
   {
     path: "/portfolio",
     name: "Portfolio",
     icon: "tim-icons icon-wallet-43",
     component: Portfolio,
-    layout: "/admin"
+    layout: "/portal"
   },
   {
     path: "/coins",
     name: "Coins",
     icon: "tim-icons icon-coins",
     component: CoinsPage,
-    layout: "/admin"
+    layout: "/portal"
   },
   {
     path: "/news",
     name: "News",
     icon: "tim-icons icon-paper",
     component: NewsPage,
-    layout: "/admin"
+    layout: "/portal"
   },
   {
     path: "/settings",
     name: "Settings",
     icon: "tim-icons icon-settings-gear-63",
     component: Settings,
-    layout: "/admin"
+    layout: "/portal"
   },
   {
     path: "/login",
