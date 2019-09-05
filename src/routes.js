@@ -2,7 +2,7 @@ import Dashboard from "./views/Dashboard.jsx";
 import CoinsPage from "./views/CoinsPage.jsx";
 import NewsPage from "./views/NewsPage.jsx";
 import Portfolio from "./views/Portfolio.jsx";
-import Settings from "./views/Settings.jsx";
+//import Settings from "./views/Settings.jsx";
 import Login from "./views/pages/Login.jsx";
 import Register from "./views/pages/Register.jsx";
 
@@ -22,24 +22,10 @@ const routes = [
     layout: "/portal"
   },
   {
-    path: "/coins",
-    name: "Coins",
-    icon: "tim-icons icon-coins",
-    component: CoinsPage,
-    layout: "/portal"
-  },
-  {
     path: "/news",
     name: "News",
     icon: "tim-icons icon-paper",
     component: NewsPage,
-    layout: "/portal"
-  },
-  {
-    path: "/settings",
-    name: "Settings",
-    icon: "tim-icons icon-settings-gear-63",
-    component: Settings,
     layout: "/portal"
   },
   {

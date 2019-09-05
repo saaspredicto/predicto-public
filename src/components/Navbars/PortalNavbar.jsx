@@ -154,11 +154,7 @@ class PortalNavbar extends React.Component {
                     <p className="d-lg-none">Log out</p>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-navbar" right tag="ul">
-                      <NavLink tag={Link} to="/portal/settings">
-                        <DropdownItem className="nav-item">Settings</DropdownItem>
-                      </NavLink>
-                    <DropdownItem divider tag="li" />
-                    <NavLink tag="li">
+                      <NavLink tag="li">
                       <DropdownItem onClick={this.props.signOut} className="nav-item">Log out</DropdownItem>
                     </NavLink>
                   </DropdownMenu>

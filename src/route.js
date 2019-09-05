@@ -35,14 +35,6 @@ class Rootrouter extends React.Component {
     render() {
         const hist = createHashHistory();
 
-        ReactPixel.init("111649226022273");
-        ReactPixel.pageView();
-        ReactPixel.fbq("track", "PageView");
-
-        hist.listen(location => {
-            ReactPixel.pageView();
-            ReactPixel.fbq("track", "PageView");
-        });
         const { auth } = this.props;
 
         const PrivateRoute = ({ component: Component, ...rest }) => (
